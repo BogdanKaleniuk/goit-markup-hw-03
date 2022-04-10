@@ -24,6 +24,10 @@ ol {
   padding-left: 0;
 }
 
+Img {
+  display: block;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--text-hero-black);
@@ -53,6 +57,7 @@ body {
 }
 
 .header {
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -393,6 +398,22 @@ body {
 }
 
 /*--- PORTFOLIO ---*/
+
+.section-navigation {
+  padding: 94px 0;
+}
+
+.navigation-list {
+  display: flex;
+
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.navigation-list-button:not(:last-child) {
+  padding-right: 8px;
+}
+
 .button-nav-hero {
   font-family: inherit;
   cursor: pointer;
@@ -403,7 +424,7 @@ body {
   border: 0;
   border-radius: 4px;
   /* identical to box height, or 162% */
-
+  padding: 6px 22px;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -422,6 +443,7 @@ body {
   border: 0;
   border-radius: 4px;
   /* identical to box height, or 162% */
+  padding: 6px 22px;
 
   text-align: center;
   letter-spacing: 0.03em;
@@ -436,12 +458,28 @@ body {
   background: #2196f3;
 }
 
+.about-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+
+.portfolio {
+  box-sizing: border-box;
+}
+
+.portfolio:not(:last-child) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
 .portfolio-content {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   /* identical to box height, or 200% */
 
+  padding-bottom: 4px;
   letter-spacing: 0.06em;
 
   color: var(--text-hero-black);
@@ -456,4 +494,10 @@ body {
   letter-spacing: 0.03em;
 
   color: #757575;
+}
+
+.card {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0px;
 }
