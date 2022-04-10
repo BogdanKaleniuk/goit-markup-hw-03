@@ -45,7 +45,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
 }
 /*--- HEADER---*/
 
@@ -149,7 +148,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 696px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   color: var(--white-color);
 }
@@ -165,7 +164,7 @@ body {
   padding-right: 15px;
   margin: 0 auto;
   margin-left: auto;
-margin-right: auto;
+  margin-right: auto;
 }
 
 .button-hero {
@@ -178,37 +177,43 @@ margin-right: auto;
   line-height: 1.88;
   border: 0;
   border-radius: 4px;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   /* identical to box height, or 188% */
   text-align: center;
   display: flex;
   margin: 0 auto;
-    
-    
-    
 
-    letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
 
-    color: var(--white-color);
-    background-color: var(--hover-text-color);
-  }
+  color: var(--white-color);
+  background-color: var(--hover-text-color);
+}
 
-  .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-  }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .button-hero:hover,
 .button-hero:focus {
   background-color: #188ce8;
+}
+
+.future-list {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
+.advantage-text {
+  margin-right: 30px;
 }
 
 .advantage {
@@ -219,27 +224,49 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   text-transform: uppercase;
   color: var(--text-hero-black);
 }
+.advantage-block:last-child {
+  margin-right: 0;
+}
 
 .advantage-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
-
+  width: 270px;
+  height: 75px;
   letter-spacing: 0.03em;
-
+  padding-top: 10px;
   color: var(--text-gray);
 }
 
 /*--- ABOUT ---*/
 
 .about {
+  padding-top: 94px;
+}
+
+.about {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
 
   color: var(--text-hero-black);
+}
+
+.about-us {
+  display: flex;
+}
+
+.about-we-work {
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+
+.about-we-work:not(:last-child) {
+  padding-right: 30px;
 }
 
 .about-img {
@@ -256,8 +283,13 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-
+  text-align: center;
+  padding-top: 94px;
   color: var(--text-hero-black);
+}
+
+.team-developer {
+  display: flex;
 }
 
 .team {
@@ -277,7 +309,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-size: 16px;
   line-height: 1.19;
   /* identical to box height */
-
+  padding-top: 30px;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -289,18 +321,34 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-size: 16px;
   line-height: 1.19;
   /* identical to box height */
-
+  margin-top: 10px;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 30px;
 
   color: #757575;
 }
 
 .team-bkcolor {
   background: #ffffff;
+  margin-bottom: 94px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-top: 50px;
+}
+
+.team-bkcolor:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*--- FOOTER ---*/
+
+.footer-style {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer-style {
   background: #2f303a;
 }
@@ -312,11 +360,16 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
-
+  padding-top: 20px;
   letter-spacing: 0.03em;
 
   color: #ffffff;
 }
+
+.footer-info-box {
+  padding-top: 9px;
+}
+
 .footer-info {
   font-family: "Roboto";
   font-style: normal;
