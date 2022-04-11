@@ -215,10 +215,7 @@ body {
   display: flex;
   padding-top: 94px;
   padding-bottom: 0;
-}
-
-.advantage-text {
-  margin-right: 30px;
+  justify-content: space-between;
 }
 
 .advantage {
@@ -231,6 +228,10 @@ body {
 }
 .advantage-block:last-child {
   margin-right: 0;
+}
+
+.advantage-block {
+  margin-right: 30px;
 }
 
 .advantage-text {
